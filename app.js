@@ -4,7 +4,7 @@ const pokedex = document.getElementById('pokedex');
 const getPokemons = () => {
     const promises = [];
     for (let i = 1; i <= 153; i++) {       
-// There was no 72nd pokemon on the API and it was giving throwing me an error, so I sorta 'fixed' it with this simple logic. 
+// There was no 72nd pokemon on the API and it was throwing me an error, so I sorta 'fixed' it with this simple logic. 
         if (i == 72) {
             i +=1;
         }
